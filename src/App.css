@@ -1,38 +1,106 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --mainBlack: #222;
+  --mainWhite: #fff;
+  --darkGrey: #afafaf;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.2rem;
+}
+img {
+  width: 100%;
+  display: block;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  transition: var(--mainTransition);
+}
+a:hover {
+  color: var(--darkGrey);
+  transform: scale(1.2);
+}
+.nav-header .logo {
+  height: auto;
+  width: 30%;
+  cursor: pointer;
+}
+
+.nav-links li {
+  padding: 0.5rem;
+  font-size: 2rem;
   text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--mainBlack);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background: white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.nav-btn {
+  font-size: 2rem;
+  cursor: pointer;
+  border: transparent;
+  background: transparent;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 1170px) {
+  .nav {
+    background: var(--mainWhite);
+    padding: 0.5rem 0.5rem;
   }
-  to {
-    transform: rotate(360deg);
+  .nav-header .logo {
+    height: auto;
+    width: 4rem;
   }
+  .nav-btn {
+    display: none;
+  }
+  .nav-center {
+    display: flex;
+    align-items: center;
+  }
+  .nav-links {
+    display: flex;
+    background: white;
+    align-items: center;
+  }
+  .nav-links li {
+    margin-right: 3rem;
+    font-size: 1rem;
+  }
+  .nav-header {
+    margin-right: 40rem;
+  }
+}
+/* home */
+.home {
+  background: url("./images/mainbackground.jpg") center/cover no-repeat fixed;
+  height: 100vh;
+}
+/* about */
+.about {
+  background: var(--darkGrey);
+  height: 100vh;
 }
