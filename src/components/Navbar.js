@@ -31,6 +31,9 @@ export class navbar extends Component {
           <div className="">
             <ul className="nav-links">
               <li>
+                <Link to="/">home</Link>
+              </li>
+              <li>
                 <Link to="/BenchPress">benchPress</Link>
               </li>
               <li>

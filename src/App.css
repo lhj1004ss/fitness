@@ -95,7 +95,7 @@ a:hover {
     font-size: 1rem;
   }
   .nav-header {
-    margin-right: 40rem;
+    margin-right: 30rem;
   }
 }
 /* home */
@@ -120,7 +120,7 @@ a:hover {
   font-size: 2rem;
   color: var(--mainWhite);
   align-items: center;
-  z-index: 3;
+  z-index: 1;
   cursor: pointer;
   left: 50%;
   top: 90%;
@@ -135,12 +135,54 @@ a:hover {
 /* about */
 .about {
   height: 100vh;
-  background: var(--mainWhite);
+  align-items: center;
+  background: grey;
+  width: 100%;
   max-width: 1170px;
+  margin: 0 auto;
 }
 /* service */
-.service {
+.services {
+  background: lightgrey;
+  text-align: center;
+  /* padding-top: 2rem; */
+  font-size: 4rem;
+  letter-spacing: var(--mainSpacing);
 }
+.service {
+  text-align: center;
+}
+.service:hover {
+  background: var(--mainWhite);
+}
+.service-center {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(475px, 1fr));
+  grid-row-gap: 2rem;
+}
+.service span {
+  font-size: 3rem;
+  color: goldenrod;
+}
+.service h6 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.service p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.service a {
+  font-size: 2.5rem;
+}
+
 /* footer */
 .footer {
+}
+/* title */
+.section-title {
+  padding: 3rem 0;
 }
